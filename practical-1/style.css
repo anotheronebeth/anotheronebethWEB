@@ -1,0 +1,21 @@
+.red-box {
+  background-color: red;
+  height: 200px;
+  width: 600px;
+  margin-bottom: 30px;
+}
+.red-box .grey-box {
+  background-color: grey;
+  height: 100px;
+  width: 100px;
+}
+.blue-box {
+  background-color: blue;
+  width: 300px;
+  height: 400px;
+}
+.blue-box .grey-box {
+  background-color: gray;
+  width: 100px;
+  height: 250px;
+}
