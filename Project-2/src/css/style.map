@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"@import \"./reset.css\";\r\n$main-color: #f28b64;\r\n\r\n@mixin box {\r\n  height: 400px;\r\n  width: 400px;\r\n  background-color: lightgreen;\r\n}\r\n.block {\r\n  height: 400px;\r\n  width: 400px;\r\n  background-color: lightgreen;\r\n  &__text {\r\n    color: $main-color;\r\n  }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAP,gBAAO;;AAQP,AAAA,MAAM,CAAC;EACL,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,UAAU;CAI7B;;;AAHE,AAAD,YAAO,CAAC;EACN,KAAK,EAZI,OAAO;CAajB"
+}

@@ -1,0 +1,16 @@
+@import "./resets.scss";
+$main-color: #f28b64;
+
+@mixin box {
+  height: 400px;
+  width: 400px;
+  background-color: lightgreen;
+}
+.block {
+  height: 400px;
+  width: 400px;
+  background-color: lightgreen;
+  &__text {
+    color: $main-color;
+  }
+}
