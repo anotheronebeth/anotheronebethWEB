@@ -152,6 +152,9 @@ table {
   height: 69px;
   align-items: center;
 }
+.main-section__content-container {
+  display: flex;
+}
 
 .nav-menu__list {
   display: flex;
@@ -215,4 +218,21 @@ table {
   left: 10px;
   transform: rotate(-36deg);
   z-index: 1;
+}
+
+.icons {
+  display: flex;
+  gap: 17px;
+}
+.icons__items {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #5290ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons__items i {
+  font-size: 21px;
 }/*# sourceMappingURL=style.css.map */

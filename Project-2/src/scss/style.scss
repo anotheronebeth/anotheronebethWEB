@@ -18,6 +18,9 @@ $color-grey: #e2e2e2;
     height: 69px;
     align-items: center;
   }
+  &__content-container {
+    display: flex;
+  }
 }
 .nav-menu {
   &__list {
@@ -80,5 +83,22 @@ $color-grey: #e2e2e2;
     left: 10px;
     transform: rotate(-36deg);
     z-index: 1;
+  }
+}
+.icons {
+  display: flex;
+  gap: 17px;
+  &__items {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid $color-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 21px;
+    }
   }
 }
