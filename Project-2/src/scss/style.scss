@@ -9,6 +9,8 @@ $color-grey: #e2e2e2;
   max-width: 1140px;
 }
 .main-section {
+  position: relative;
+  overflow: hidden;
   height: 800px;
   background: #f0f0f0;
   padding-top: 16px;
@@ -20,6 +22,17 @@ $color-grey: #e2e2e2;
   }
   &__content-container {
     display: flex;
+    position: relative;
+  }
+  &__first-elipse {
+    position: absolute;
+    top: 129px;
+    right: 34px;
+  }
+  &__second-elipse {
+    position: absolute;
+    right: -120px;
+    top: 650px;
   }
 }
 .nav-menu {
@@ -85,6 +98,23 @@ $color-grey: #e2e2e2;
     z-index: 1;
   }
 }
+.right-wrapper {
+  width: 372px;
+  position: absolute;
+  top: 150px;
+  right: 76px;
+  z-index: 1;
+  &__icons-box {
+    padding-left: 10px;
+  }
+  &__title {
+    margin-bottom: 5px;
+  }
+  &__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
 .icons {
   display: flex;
   gap: 17px;
@@ -100,5 +130,70 @@ $color-grey: #e2e2e2;
     i {
       font-size: 21px;
     }
+  }
+}
+.title {
+  font-size: 72px;
+  position: relative;
+  &__hr {
+    width: 65px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    border: none;
+    border-top: 1px solid black;
+  }
+}
+.buttons {
+  display: flex;
+  gap: 32px;
+  &__main-btn {
+    min-width: 200px;
+    height: 60px;
+    background: $color-orange;
+    box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+    border-radius: 100px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  &__icon-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+      height: 48px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+  }
+}
+.elipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 194px;
+  height: 194px;
+  background: linear-gradient(
+    144deg,
+    rgba(237, 123, 80, 0.5) 15%,
+    rgba(72, 138, 234, 0.5) 53%,
+    rgba(44, 44, 44, 0.5) 86%
+  );
+  border-radius: 50%;
+  &__subtract {
+    height: 130px;
+    width: 130px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    &_big {
+      height: 188px;
+      width: 188px;
+    }
+  }
+  &_big {
+    height: 282px;
+    width: 282px;
   }
 }
