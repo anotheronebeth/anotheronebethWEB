@@ -11,7 +11,7 @@ $color-grey: #e2e2e2;
 .main-section {
   position: relative;
   overflow: hidden;
-  height: 800px;
+  min-height: 800px;
   background: #f0f0f0;
   padding-top: 16px;
   &__nav-container {
@@ -27,7 +27,7 @@ $color-grey: #e2e2e2;
   &__first-elipse {
     position: absolute;
     top: 129px;
-    right: 34px;
+    right: 80px;
   }
   &__second-elipse {
     position: absolute;
@@ -195,5 +195,79 @@ $color-grey: #e2e2e2;
   &_big {
     height: 282px;
     width: 282px;
+  }
+}
+.second-section {
+  min-height: 700px;
+  position: relative;
+  &__container {
+    padding: 32px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__card-box {
+    display: inline-flex;
+    gap: 30px;
+    margin-bottom: 25px;
+  }
+  &__icons-box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__first-elipse {
+    position: absolute;
+    top: 80px;
+    right: -60px;
+    z-index: -1;
+  }
+  &__second-elipse {
+    position: absolute;
+    top: 364px;
+    left: -60px;
+    z-index: -1;
+  }
+}
+.cards-item {
+  position: relative;
+  height: 360px;
+  width: 360px;
+  background: #e2e2e2;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  &__img {
+    height: 335px;
+  }
+  &__text {
+    width: 280px;
+    font-size: 36px;
+    text-align: center;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 144px;
+    right: -45px;
+  }
+}
+.cards-item_orange {
+  background: $color-orange;
+}
+.cards-item_blue {
+  background: $color-blue;
+}
+.icons-item {
+  display: inline-flex;
+  align-items: center;
+
+  &__img {
+    margin-right: 20px;
+    width: 80px;
+  }
+  &__text {
+    font-size: 18px;
+
+    span {
+      font-size: 48px;
+    }
   }
 }
