@@ -7,6 +7,7 @@ $color-grey: #e2e2e2;
 .container {
   margin: 0 auto;
   max-width: 1140px;
+  position: relative;
 }
 .main-section {
   position: relative;
@@ -270,4 +271,50 @@ $color-grey: #e2e2e2;
       font-size: 48px;
     }
   }
+}
+.third-section {
+  position: relative;
+  min-height: 640px;
+  background: #f0f0f0;
+  overflow: hidden;
+  z-index: 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+    padding-top: 46px;
+  }
+  &__right-wrapper {
+    max-width: 480px;
+  }
+  &__right-title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__first-elipse {
+    position: absolute;
+    top: 140px;
+    left: 110px;
+    z-index: -1;
+  }
+  &__second-elipse {
+    position: absolute;
+    left: 20px;
+    top: 280px;
+    width: 160px;
+    height: 160px;
+    z-index: -1;
+  }
+  &__third-elipse {
+    position: absolute;
+    top: -120px;
+    right: -120px;
+  }
+}
+.title__hr_top {
+  bottom: 75px;
 }
