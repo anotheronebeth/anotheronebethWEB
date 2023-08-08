@@ -136,6 +136,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -272,6 +276,7 @@ table {
 .title {
   font-size: 72px;
   position: relative;
+  font-weight: 600;
 }
 .title__hr {
   width: 65px;
@@ -294,6 +299,7 @@ table {
   border-radius: 100px;
   border: none;
   color: #fff;
+  font-weight: 600;
   font-size: 18px;
 }
 .buttons__icon-btn {
@@ -384,6 +390,7 @@ table {
   position: absolute;
   top: 144px;
   right: -45px;
+  font-weight: 600;
 }
 
 .cards-item_orange {
@@ -407,6 +414,7 @@ table {
 }
 .icons-item__text span {
   font-size: 48px;
+  font-weight: 600;
 }
 
 .third-section {
@@ -455,4 +463,23 @@ table {
 
 .title__hr_top {
   bottom: 75px;
+}
+
+.footer {
+  position: relative;
+}
+.footer__img {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  height: 300px;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
